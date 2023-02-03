@@ -1,0 +1,199 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.header__title {
+    font-size: 30px !important;
+    font-weight: bold;
+}
+
+.page__form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-left: -30px;
+}
+
+.page__input_container {
+    width: 50% !important;
+    display: flex;
+    justify-content: center;
+}
+
+.page__button_container {
+    margin: 20px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.page__button {
+    margin: 10px;
+}
+
+.page__input {
+    width: 80%;
+}
+
+/* Factura page */
+
+.page__header {
+    display: flex;
+    align-items: center;
+}
+
+.page_factura {
+    display: flex;
+    flex-direction: column;
+}
+
+.page_factura_bloque1 {
+    display: flex;
+    margin: 5px;
+    justify-content: flex-start;
+}
+
+.bloque1__serie {
+    margin-right: 5vw;
+}
+
+.bloque1__numFactura {
+    width: 400px;
+}
+
+.page_factura_bloque2 {
+    display: flex;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+
+.bloque2_input {
+    width: 45vw;
+}
+
+.page_factura_bloque2_form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 3px 0;
+}
+
+.form_label {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 100;
+    color: #a9a9a9;
+}
+
+.page_factura_bloque3 {
+    display: flex;
+    margin: 5px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.page_factura_bloque3_form {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    margin: 3px 0;
+}
+
+.bloque3_inputs {
+    width: 29vw;
+}
+
+.page_factura_bloque4_form {
+    display: flex;
+    justify-content: center;
+}
+
+.bloque4__button {
+    width: 300px;
+}
+
+/* Dialogo */
+.dialog__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog__fileuploader {
+    margin: 5px;
+    align-self: center;
+}
+
+@media all and (max-width: 1300px) {
+    .page_factura_bloque2 {
+        flex-direction: flex;
+        justify-content: center;
+    }
+
+    .bloque2_input {
+        width: 40vw;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .page__form {
+        flex-direction: column;
+    }
+
+    .page__button_container {
+        width: 100%;
+    }
+
+    .page__input {
+        margin: 5px;
+    }
+
+    .title {
+        font-size: 14px;
+    }
+
+    .bloque1__serie {
+        margin: 5px 0;
+        width: 80vw;
+    }
+
+    .bloque1__numFactura {
+        margin: 5px 0;
+        width: 80vw;
+    }
+
+    .bloque2_input {
+        width: 80vw;
+    }
+
+    .page_factura_bloque2_form {
+        margin: 5px 0;
+    }
+
+    .page_factura_bloque1 {
+        flex-direction: column;
+    }
+
+    .page_factura_bloque2 {
+        flex-direction: column;
+    }
+
+    .page_factura_bloque3 {
+        flex-direction: column;
+    }
+
+    .bloque3_inputs {
+        width: 80vw;
+    }
+
+    .bloque4__button {
+        width: 150px;
+    }
+
+    .page_factura {
+        align-items: center;
+    }
+}
